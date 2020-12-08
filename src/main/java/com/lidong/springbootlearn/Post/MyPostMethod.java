@@ -59,10 +59,10 @@ public class MyPostMethod {
             if (cookie.getName() .equals("login" )&& cookie.getValue().equals("true") &&
                     user.getName().equals("zhangshan") && user.getPassword().equals("111111")) {
 
-                user1.setUsename("lisi");
+                user1.setUsername("lisi");
                 user1.setAge("18");
 
-                return user1.toString();
+                return user.toString();
             }
 
         }

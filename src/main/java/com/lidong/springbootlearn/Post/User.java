@@ -3,7 +3,7 @@ package com.lidong.springbootlearn.Post;
 import lombok.Data;
 @Data
 public class User {
-    private String usename;
+    private String username;
     private  String password;
     private String name;
     private  String age;
