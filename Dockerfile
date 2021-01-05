@@ -13,7 +13,6 @@ RUN yum -y install net-tools
 EXPOSE 8090
 #输出工作下的所有文件夹和文件
 RUN ls -lh
-
 #dockerfile命令
 FROM java:8
 ADD springbootlearn-0.0.1-SNAPSHOT.jar app.jar
