@@ -31,7 +31,7 @@ spec:
     - name: harborsecret
   containers:
     - name: maven
-  image: 192.168.24.138/java/springbootlearn:latest
+  image: hub.testserver.com/java/springbootlearn:latest
   imagePullPolicy: Always
   ports:
     - containerPort: 8080
