@@ -6,10 +6,10 @@ spec:
   type: NodePort
   ports:
     - name: maven
-  port: 8080
-  nodePort: 31002
-  targetPort: 8080
-  protocol: TCP
+      port: 8080
+      nodePort: 31002
+      targetPort: 8080
+      protocol: TCP
   selector:
     app: maven
 ---
@@ -26,15 +26,15 @@ spec:
     metadata:
       labels:
         app: maven
-  spec:
-  imagePullSecrets:
-    - name: harborsecret
-  containers:
-    - name: maven
-  image: hub.testserver.com/java/springbootlearn:latest
-  imagePullPolicy: Always
-  ports:
-    - containerPort: 8080
-  env:
-    - name: key
-  value: "value"
+    spec:
+      imagePullSecrets:
+        - name: harborsecret
+      containers:
+        - name: maven
+          image: hub.testserver.com/java/springbootlearn:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: key
+              value: "value"
